@@ -1,0 +1,114 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Inorder BST</title>
+</head>
+
+<body onload="onloadData()">
+	<script type="text/javascript">
+		class Node {
+			constructor(data) {
+				this.data = data;
+				this.left = null;
+				this.right = null;
+			}
+		}
+
+		var onloadData = () => {
+
+			//object instance
+			var searchTreeNode = new searchTree();
+			try {
+				var inputArray = [40, 20, 50, 10, 30, 60, 5, 50, 67, 78, 78];
+				// var inputArray = [40, 20, 50, 10, 30, 60, 5, 67, 78];
+				//var inputArray=[15,25,10,7,22,17,13,35,9,5,27];
+				var removeDuplicates = (inputArray) => {
+					return [... new Set(inputArray)]
+				}
+				var arr = removeDuplicates(inputArray);
+
+				if (arr.length > 0) {
+					for (var i = 0; i < arr.length; i++) {
+						//calling insertInput method from search tree class
+						searchTreeNode.insertInput(arr[i]);
+					}
+					var root = searchTreeNode.getRootNode();
+					searchTreeNode.inOrder(root);
+					var root = searchTreeNode.getRootNode();
+				} else {
+					document.write('ERROR: Check length of the input array');
+				}
+
+			} catch (error) {
+				document.write('ERROR while loading data: ', error);
+			}
+		}
+
+		class searchTree {
+			constructor() {
+				this.root = null;
+			}
+
+			//inserting Input data
+			insertInput = (data) => {
+				try {
+					if (typeof (data) === "number") {
+						var newNode = new Node(data);
+						if (this.root === null) {
+							this.root = newNode;
+						} else {
+							this.insertInputNode(this.root, newNode);
+						}
+					} else {
+						document.write('Checking type of data and it should be number');
+					}
+				} catch (error) {
+					document.write('ERROR: while inserting data', error);
+				}
+			}
+
+			insertInputNode = (node, newNode) => {
+				try {
+					if (newNode.data < node.data) {
+						if (node.left === null) {
+							node.left = newNode;
+						} else {
+							this.insertInputNode(node.left, newNode);
+						}
+					} else {
+						if (node.right === null) {
+							node.right = newNode;
+						} else {
+							this.insertInputNode(node.right, newNode);
+						}
+					}
+				} catch (error) {
+					document.write('ERROR: while inserting Input node ', error)
+				}
+			}
+
+			getRootNode = () => {
+				return this.root;
+			}
+
+			inOrder = (node) => {
+
+				try {
+					let sum = 0;
+					if (node !== null) {
+						sum = sum + this.inOrder(node.left);
+
+						sum = sum + node.data;
+						sum = sum + this.inOrder(node.right);
+					}
+					return sum
+				} catch (error) {
+					document.write('ERROR: while inOrdering the data ', error)
+				}
+			}
+		}
+	</script>
+</body>
+
+</html>

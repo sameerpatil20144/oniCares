@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.sidenav---navtext---1AE_f,
+.sidenav---navicon---3gCRo > *{
+	opacity: 1 !important;
+}
+
+.sidenav---sidenav---_2tBP{
+  position: fixed !important;
+}

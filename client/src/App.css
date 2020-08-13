@@ -1,0 +1,22 @@
+.error{
+    color:red
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    height: 99%;
+    background: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7B1FA2;
+
+}
+
+select{
+    text-transform: capitalize
+}

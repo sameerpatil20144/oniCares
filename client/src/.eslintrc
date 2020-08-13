@@ -1,0 +1,14 @@
+{
+    "plugins": [
+        "plugin1"
+    ],
+    "rules": {
+        "eqeqeq": "off",
+        "no-console": "error",
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "plugin1/rule1": "error"
+    }
+}

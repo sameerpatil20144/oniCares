@@ -1,0 +1,75 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.0",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/lab": "^4.0.0-alpha.40",
+    "@material-ui/utils": "^4.7.1",
+    "@react-pdf/renderer": "^1.6.8",
+    "@react-pdf/styled-components": "^1.4.0",
+    "@trendmicro/react-sidenav": "^0.4.5",
+    "aws-sdk": "^2.604.0",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "emoji-regex": "^8.0.0",
+    "eslint-plugin-disable": "^1.0.5",
+    "formik": "^1.5.8",
+    "jodit-react": "^1.0.42",
+    "js-cookie": "^2.2.1",
+    "material-table": "^1.56.1",
+    "moment": "^2.24.0",
+    "number-to-words": "^1.2.4",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-data-table-component": "^3.10.3",
+    "react-date-picker": "^7.10.0",
+    "react-datepicker": "^2.11.0",
+    "react-detect-offline": "^2.4.0",
+    "react-dom": "^16.12.0",
+    "react-flatpickr": "^3.9.1",
+    "react-form-validator-core": "^0.6.5",
+    "react-image-mapper": "0.0.15",
+    "react-input-mask": "^2.0.4",
+    "react-material-ui-form-validator": "^2.0.10",
+    "react-moment": "^0.9.7",
+    "react-pdf": "^4.1.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "react-select": "^3.0.8",
+    "react-select-2": "^2.0.11",
+    "react-sticky-header": "^0.2.0",
+    "react-to-pdf": "0.0.11",
+    "react-to-print": "^2.7.0",
+    "react-toastify": "^6.0.5",
+    "react-virtualized": "^9.21.2",
+    "request": "^2.88.0",
+    "styled-components": "^4.4.0",
+    "yup": "^0.27.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js src/**/*.jsx"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
